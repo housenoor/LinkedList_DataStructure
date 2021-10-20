@@ -10,9 +10,8 @@ public class LinkedList {
 		myLinkedList.append(mySecondNode);
 		myLinkedList.append(myThirdNode);
 		myLinkedList.displayNode();
-		// To delete the last element in the sequence
-		myLinkedList.popLastNode();
-		myLinkedList.displayNode();
+		// Getiing the position of element 30.
+		myLinkedList.searchElement();
 
 	}
 }
