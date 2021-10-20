@@ -7,11 +7,12 @@ public class LinkedList {
 		MyNode<Integer> myThirdNode = new MyNode<>(70);
 		MyLinkedList myLinkedList = new MyLinkedList();
 		myLinkedList.append(myFirstNode);
+		myLinkedList.append(mySecondNode);
 		myLinkedList.append(myThirdNode);
-		myLinkedList.insertInMiddle(myFirstNode, mySecondNode);
 		myLinkedList.displayNode();
-		// To delete the first element in the sequence
-		myLinkedList.popFirstNode();
+		// To delete the last element in the sequence
+		myLinkedList.popLastNode();
 		myLinkedList.displayNode();
+
 	}
 }
