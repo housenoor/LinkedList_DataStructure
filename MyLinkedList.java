@@ -76,7 +76,7 @@ public class MyLinkedList {
 			while (tempNode != null) {
 				position++;
 				if (tempNode.getKey().equals(30)) {
-					//System.out.println("Key value 30 is present at position " + position + " in list");
+					System.out.println("Key value 30 is present at position " + position + " in list");
 				}
 				tempNode = tempNode.getNext();
 			}
@@ -93,6 +93,17 @@ public class MyLinkedList {
 		newNode.next = nodeAtPreviousIndex.next;
 		nodeAtPreviousIndex.next = newNode;
 
+	}
+
+	/* This method is used to delete a element at particular position */
+	public void deleteAtPosition(int position) {
+		MyNode previousNode = (MyNode) head;
+		MyNode currentNode = (MyNode) head;
+		for (int i = 0; i < position; i++) {
+			previousNode = currentNode;
+			currentNode = (MyNode) currentNode.next;
+		}
+		previousNode.next = currentNode.next;
 	}
 
 	/* This method is used to display the sequence */
